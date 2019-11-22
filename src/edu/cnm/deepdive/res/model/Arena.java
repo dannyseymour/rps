@@ -44,6 +44,11 @@ public class Arena {
       }
     }
   }
+
+  public byte getNumBreeds() {
+    return numBreeds;
+  }
+
   public byte[][] getTerrain(){
     byte[][] safeCopy = new byte[arenaSize][];
     synchronized (lock) {
